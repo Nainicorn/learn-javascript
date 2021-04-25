@@ -1,33 +1,16 @@
-let names = ["Hello", "World", "How", "Are", "You"];
-let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-// names.forEach(function (item, index) {
-//     item = item + "1";
-//     console.log(item)
-// })
-// console.log(names)
 
-// names = names.map(function (item, index) {
-//     return item + "1";
-// })
-// console.log(names)
+document.getElementById('greetButton').addEventListener('click', greet);
+document.getElementById('colorButton').addEventListener('click', color);
 
-// names = names.filter(function (item, index) {
-//     return item == "World";
-// })
-// console.log(names)
+function greet() {
+    let input1 = document.getElementById('name1').value;
+    let output1 = document.getElementById('output1');
+    output1.innerText = 'Hello ' + input1;
+}
 
-// names.push("Cool")
-// console.log(names)
-
-// names = names.slice(2, 4)
-// console.log(names)
-
-final = numbers.reduce(function (prev, current) {
-    return prev * current
-})
-console.log(final)
-
-console.log(numbers.join())
-
-console.log(Math.ceil(10))
-
+function color() {
+    let color1 = document.getElementById('color1').value;
+    let output1 = document.getElementById('output1');
+    output1.style.color = color1;
+    
+}
