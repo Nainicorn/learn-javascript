@@ -7,7 +7,7 @@
     npm/nodemon & console
     Live Server
     Github Repo
-    JSON Server
+    npm install -g json-server JSON Server
 
 ## JavaScript
 
@@ -17,7 +17,7 @@
 ## Useful Links
 
     https://caniuse.com/
-    https://caniuse.com/https://html5test.com/
+    https://html5test.com/
 
 ## Fundamentals
 

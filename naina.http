@@ -1,0 +1,11 @@
+//GET http://localhost:3000/employees
+
+
+POST http://localhost:3000/courses HTTP/1.1
+content-type: application/json
+
+{
+    "id": 1
+    "name": "Gym",
+    "difficulty": "0"
+}
