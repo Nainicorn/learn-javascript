@@ -25,28 +25,66 @@
     https://github.com/lukehoban/es6features
     Variables (var, let and const)
     http://es6-features.org/#Constants
-    Data Types
-        string
-        number
-        boolean
-        object
-        function
-        null
-        undefined
-    Object Types
-        Object
-        Date
-        Array
-        String
-        Number
-        Boolean
-    typeof
+
+Naina - Create a file like 'lesson1-comments.js'
+Comments // one line comment
+/_
+multi line
+comment
+_/
+
+    hashbang syntax
+    #!/usr/bin/env
+
+Naina - Create a file like 'lesson2-variables.js'
+
+    Variable Declarations
+    var - Declares a variable, optionally initializing it to a value.
+    let - Declares a block-scoped, local variable, optionally initializing it to a value.
+    const - Declares a block-scoped, read-only named constant.
+
+    You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.
+
+    A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($). Subsequent characters can also be digits (0–9).
+
+    Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) as well as "a" through "z" (lowercase).
+
+    You can use most of ISO 8859-1 or Unicode letters such as å and ü in identifiers. (For more details, see this blog post.) You can also use the Unicode escape sequences as characters in identifiers.
+
+    Some examples of legal names are Number_hits, temp99, $credit, and _name.
+
+Grammer and Types
+6 Data Types (Primitives) typeof operator 1. undefined 2. boolean ex: true 3. number ex: 10 4. string ex: 'Hello' 5. bigint ex: 10n 6. symbol
+2 Structural Types instanceof operator 1. object (Object, Array, Map, Set, WeakMap, WeakSet, Date all made with new keyword) 2. function
+1 Structural Root Primitive 1. null
+
     Type Conversion
+
+    Literals
+        Array literals
+        Boolean literals
+        Floating-point literals
+        Numeric literals
+        Object literals
+        RegExp literals
+        String literals
+            Template literals
+            Unicode (amazing)
+
+Control flow and error handling
+--------------------------------
+
+
+
+
+
+
+
+
     Math
     String
-    Template Literals
     Arrays
-    Object Literals
+
     Introduction to Objects
     Dot vs. Bracket Notation
     Object Methods
