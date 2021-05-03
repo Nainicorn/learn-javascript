@@ -1,0 +1,7 @@
+// comment
+
+/* 
+multi
+line
+comment
+*/

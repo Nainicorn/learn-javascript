@@ -26,19 +26,19 @@
     Variables (var, let and const)
     http://es6-features.org/#Constants
 
-Naina - Create a file like 'lesson1-comments.js'
-Comments // one line comment
-/_
-multi line
-comment
-_/
+## Comments
+
+    single line comment // one line comment
+    multi line comment /* multi line comment */
+
+## Hashbang syntax
 
     hashbang syntax
     #!/usr/bin/env
 
-Naina - Create a file like 'lesson2-variables.js'
+## Variables
 
-    Variable Declarations
+    JavaScript has three kinds of variable declarations.
     var - Declares a variable, optionally initializing it to a value.
     let - Declares a block-scoped, local variable, optionally initializing it to a value.
     const - Declares a block-scoped, read-only named constant.
@@ -146,12 +146,12 @@ Grammer and Types
         NaN
         the empty string ("")
     switch statement
-    break statements
-    The finally block
+        break statement
+    ----SREENAINA----
     Exception handling statements
         throw statement
         try...catch statement
-
+        The finally block
 
     Loops and iteration
         for statement
@@ -162,34 +162,63 @@ Grammer and Types
         continue statement
         for...in statement
         for...of statement
-    -----------------------------------
 
-I am here
+## Functions
 
-    Math
-    String
-    Arrays
+    Function declarations
+    Function expressions
+    Calling functions
+    Function scope
+    Recursion
+    Nested functions and closures
+    Preservation of variables
+    Multiply-nested functions
+    Name conflicts
+    Closures
+    Using the arguments object
+    Function parameters
+        Default parameters
+        With default parameters (post-ECMAScript 2015)
+        Rest parameters
+    Arrow functions
+    Shorter functions
+    No separate this
+    Predefined functions
 
-    Introduction to Objects
-    Dot vs. Bracket Notation
-    Object Methods
+## Expressions and operators
 
-    Date & Time
-    Conditionals
+    Operators
+    Return value and chaining
+    Destructuring
+    Comparison operators
+    Arithmetic operators
+    Bitwise operators
+    Bitwise logical operators
+    Bitwise shift operators
+    Logical operators
+    Short-circuit evaluation
+    String operators
+    Conditional (ternary) operator
+    Comma operator
+    Unary operators
+        typeof
+        void
+    Relational operators
+        in
+        instanceof
+    Operator precedence
+    Expressions
+        Primary expressions
+        this
+    Grouping operator
+    Left-hand-side expressions
+        new
+        super
 
-    Switch
-    Functions
-    Function Declarations vs. Expressions
+---
 
-    Scope
-    The Conditional (Ternary) Operator
     Destructuring Spread and rest
-    Iterators and Generators
     Symbols
-    Maps
-    Sets
-    Modules
-    Promises
     Declarative and Functional JavaScript Principles
 
 ## HTML
@@ -264,9 +293,6 @@ I am here
     Fetch API
     Axios
     Async & Await
-
-## Arrow Functions
-
 ## Webpack
 
     Setup
