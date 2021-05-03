@@ -59,27 +59,112 @@ Grammer and Types
 1 Structural Root Primitive 1. null
 
     Type Conversion
+        JavaScript is a dynamically typed language. This means you don't have to specify the data type of a variable when you declare it. It also means that data types are automatically converted as-needed during script execution.
+
+        So, for example, you could define a variable as follows:
+
+        var answer = 42;
+        And later, you could assign the same variable a string value, for example:
+        answer = 'Thanks for all the fish...';
+
+        Numbers and the '+' operator
+        x = 'The answer is ' + 42 // "The answer is 42"
+        y = 42 + ' is the answer' // "42 is the answer"
+        '37' - 7 // 30
+        '37' + 7 // "377"
+
+    Converting strings to numbers
+        In the case that a value representing a number is in memory as a string, there are methods for conversion.
+
+        parseInt()
+        parseFloat()
+        parseInt only returns whole numbers, so its use is diminished for decimals.
+
+        Note: Additionally, a best practice for parseInt is to always include the radix parameter. The radix parameter is used to specify which numerical system is to be used.
+
+        parseInt('101', 2) // 5
+        An alternative method of retrieving a number from a string is with the + (unary plus) operator:
+
+        '1.1' + '1.1' // '1.11.1'
+        (+'1.1') + (+'1.1') // 2.2
+        // Note: the parentheses are added for clarity, not required.
 
     Literals
-        Array literals
-        Boolean literals
+        Array literals let coffees = ['French Roast', 'Colombian', 'Kona'];
+        Boolean literals true, false
+        Floating-point literals 1.0, 4.33
+        Numeric literals -
+            Number and BigInt types can be written in
+            decimal (base 10),
+            hexadecimal (base 16),
+            octal (base 8) and
+            binary (base 2).
+            A decimal numeric literal is a sequence of digits without a leading 0 (zero).
+            A leading 0 (zero) on a numeric literal, or a leading 0o (or 0O) indicates it is in octal. Octal numerics can include only the digits 0–7.
+            A leading 0x (or 0X) indicates a hexadecimal numeric type. Hexadecimal numerics can include digits (0–9) and the letters a–f and A–F. (The case of a character does not change its value. Therefore: 0xa = 0xA = 10 and 0xf = 0xF = 15.)
+            A leading 0b (or 0B) indicates a binary numeric literal. Binary numerics can only include the digits 0 and 1
+
+            Some examples of numeric literals are:
+
+            0, 117, -345, 123456789123456789n             (decimal, base 10)
+            015, 0001, -0o77, 0o777777777777n             (octal, base 8)
+            0x1123, 0x00111, -0xF1A7, 0x123456789ABCDEFn  (hexadecimal, "hex" or base 16)
+            0b11, 0b0011, -0b11, 0b11101001010101010101n  (binary, base 2)
         Floating-point literals
-        Numeric literals
+            A floating-point literal can have the following parts:
+
+            A decimal integer which can be signed (preceded by "+" or "-"),
+            A decimal point ("."),
+            A fraction (another decimal number),
+            An exponent.
+            The exponent part is an "e" or "E" followed by an integer, which can be signed (preceded by "+" or "-"). A floating-point literal must have at least one digit, and either a decimal point or "e" (or "E").
+
+            More succinctly, the syntax is:
+
+            [(+|-)][digits].[digits][(E|e)[(+|-)]digits]
+            For example:
+
+            3.1415926
+            -.123456789
+            -3.1E+12
+            .1e-23
         Object literals
-        RegExp literals
+        RegExp literals var re = /ab+c/;
         String literals
-            Template literals
-            Unicode (amazing)
+        Template literals
+        Unicode (amazing)
 
-Control flow and error handling
---------------------------------
+## Control flow and error handling
+
+    Block statement
+    Conditional statements
+    Falsy values - The following values evaluate to false (also known as Falsy values):
+        false
+        undefined
+        null
+        0
+        NaN
+        the empty string ("")
+    switch statement
+    break statements
+    The finally block
+    Exception handling statements
+        throw statement
+        try...catch statement
 
 
+    Loops and iteration
+        for statement
+        do...while statement
+        while statement
+        labeled statement
+        break statement
+        continue statement
+        for...in statement
+        for...of statement
+    -----------------------------------
 
-
-
-
-
+I am here
 
     Math
     String
@@ -96,10 +181,7 @@ Control flow and error handling
     Functions
     Function Declarations vs. Expressions
 
-    Expressions
-    Loops
     Scope
-    Try Catch
     The Conditional (Ternary) Operator
     Destructuring Spread and rest
     Iterators and Generators
