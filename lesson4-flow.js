@@ -68,3 +68,18 @@
 //         console.log('common!')
 //         break;
 // }
+
+function setFruit(fruit) {
+    if (!fruit) {
+        fruit = localStorage.getItem('fruit')
+    }
+    let messageElement = document.querySelector('.message');
+    messageElement.textContent = fruit
+
+    document.body.style.backgroundColor = fruit
+    
+    localStorage.setItem('fruit', fruit);
+}
+
+setFruit()
+

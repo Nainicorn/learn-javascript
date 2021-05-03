@@ -16,3 +16,5 @@
 // How to run JS files
 // Option 1: Create index.html and include your js file
 // Option 2: Use nodemon node file.js -q
+// auto format on save
+// linked editing for automatic end tags
