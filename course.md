@@ -1,32 +1,45 @@
-> simple2master
+# **simple2master** - _master in simple steps_
 
-## Environment Setup
+## Lesson 0 Environment Setup
 
-    Node.js, NPM, VS Code, Git
+    Install
+        Node.js
+        NPM
+        VS Code
+        Git
     VS Code Extensions
-    npm/nodemon & console
-    Live Server
-    Github Repo
-    npm install -g json-server JSON Server
+        Git Lens
+        Indent rainbow
+        JavaScript ES6 code snippets
+        Live Server
+        Prettier
+        Rest Client
+        Bracket Pair
+        Auto Open Markdown Preview
+        Quokka
+    Install Nodemon
+        npm i nodemon -g
+    Other ways to write JS on browser
+        JSbin
+        Codepen
+        JSFiddle
+    Create a Github Repo
+    Install JSON-Server
+        npm install -g json-server JSON Server
 
-## JavaScript
+## Lesson 1 JavaScript
 
     History
-    Babel
+    Useful Links
+        Babel
+        https://caniuse.com/
+        https://html5test.com/
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript
+        https://github.com/lukehoban/es6features
+        Variables (var, let and const)
+        http://es6-features.org/#Constants
 
-## Useful Links
-
-    https://caniuse.com/
-    https://html5test.com/
-
-## Fundamentals
-
-    https://developer.mozilla.org/en-US/docs/Web/JavaScript
-    https://github.com/lukehoban/es6features
-    Variables (var, let and const)
-    http://es6-features.org/#Constants
-
-## Comments
+## Lesson 2 Comments
 
     single line comment // one line comment
     multi line comment /* multi line comment */
@@ -36,7 +49,7 @@
     hashbang syntax
     #!/usr/bin/env
 
-## Variables
+## Lesson 3 Variables
 
     JavaScript has three kinds of variable declarations.
     var - Declares a variable, optionally initializing it to a value.
@@ -53,12 +66,31 @@
 
     Some examples of legal names are Number_hits, temp99, $credit, and _name.
 
-Grammer and Types
-6 Data Types (Primitives) typeof operator 1. undefined 2. boolean ex: true 3. number ex: 10 4. string ex: 'Hello' 5. bigint ex: 10n 6. symbol
-2 Structural Types instanceof operator 1. object (Object, Array, Map, Set, WeakMap, WeakSet, Date all made with new keyword) 2. function
-1 Structural Root Primitive 1. null
+## Lesson 4 Grammer and Types
 
-    Type Conversion
+    single line comment // one line comment
+    multi line comment /* multi line comment */
+
+### 6 Data Types (Primitives) operator typeof
+
+        1. undefined
+        2. boolean ex: true
+        3. number ex: 10
+        4. string ex: 'Hello'
+        5. bigint ex: 10n
+        6. symbol
+
+### 2 Structural Types instanceof operator
+
+        1. object (Object, Array, Map, Set, WeakMap, WeakSet, Date all made with new keyword)
+        2. function
+
+### 1 Structural Root Primitive
+
+        1. null
+
+### Type Conversion
+
         JavaScript is a dynamically typed language. This means you don't have to specify the data type of a variable when you declare it. It also means that data types are automatically converted as-needed during script execution.
 
         So, for example, you could define a variable as follows:
@@ -89,7 +121,8 @@ Grammer and Types
         (+'1.1') + (+'1.1') // 2.2
         // Note: the parentheses are added for clarity, not required.
 
-    Literals
+### Literals
+
         Array literals let coffees = ['French Roast', 'Colombian', 'Kona'];
         Boolean literals true, false
         Floating-point literals 1.0, 4.33
@@ -128,13 +161,13 @@ Grammer and Types
             -.123456789
             -3.1E+12
             .1e-23
-        Object literals
+        Object literals {}
         RegExp literals var re = /ab+c/;
         String literals
         Template literals
         Unicode (amazing)
 
-## Control flow and error handling
+## Lesson 5 Control flow and error handling
 
     Block statement
     Conditional statements
@@ -293,6 +326,7 @@ Grammer and Types
     Fetch API
     Axios
     Async & Await
+
 ## Webpack
 
     Setup
