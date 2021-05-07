@@ -31,12 +31,11 @@
 
     History
     Useful Links
-        Babel
+        https://babeljs.io/
         https://caniuse.com/
         https://html5test.com/
         https://developer.mozilla.org/en-US/docs/Web/JavaScript
         https://github.com/lukehoban/es6features
-        Variables (var, let and const)
         http://es6-features.org/#Constants
 
 ## Lesson 2 Comments
@@ -180,12 +179,10 @@
         the empty string ("")
     switch statement
         break statement
-    ----SREENAINA----
     Exception handling statements
         throw statement
         try...catch statement
         The finally block
-
     Loops and iteration
         for statement
         do...while statement
@@ -196,7 +193,9 @@
         for...in statement
         for...of statement
 
-## Functions
+---SREENAINA----
+
+## Lesson 6 Functions
 
     Function declarations
     Function expressions
@@ -217,8 +216,11 @@
     Shorter functions
     No separate this
     Predefined functions
+    Getter
+    Setter
+    Rest Params
 
-## Expressions and operators
+## Lesson 7 Expressions and operators
 
     Operators
     Return value and chaining
@@ -248,9 +250,32 @@
         new
         super
 
----
+## Lesson 8 Numbers and Dates
 
-    Destructuring Spread and rest
+## Lesson 9 Text Formatting
+
+    String Methods
+
+## Lesson 10 Regular Expressions
+
+## Lesson 11 Indexed Collections
+
+## Lesson 12 Working with Objects
+
+## Lesson 13 Object Model
+
+## Lesson 14 HTTP - Ajax to Await
+
+    XMLHttpRequest - Ajax & Callback
+    Fetch API
+    Promises
+    Async & Await
+    Axios Library
+
+## Lesson 15 JS Modules
+
+## Others - Pending
+
     Symbols
     Declarative and Functional JavaScript Principles
 
@@ -258,10 +283,14 @@
 
     Semantic Markup
     Document Structure
+    Basic HTML Document
+        Events
+        Updating simple DOM
 
 ## CSS/SASS
 
     Basic CSS
+        Media Query
     Basic Animations
 
 ## Built in Objects
@@ -275,6 +304,17 @@
     Cookies
     Navigator
     HTML5 APIs
+        Storage
+        DragNDrop
+        CSS Counter
+        Console
+        Canvas
+        Clipboard
+        File System API
+        Network
+        Page Visibility
+        Resize Observer (Container Queries)
+        Socket API
 
 ## DOM
 
@@ -319,17 +359,8 @@
     Observer Pattern
     Mediator Pattern
 
-## HTTP
-
-    Ajax & Callback
-    Promises
-    Fetch API
-    Axios
-    Async & Await
-
 ## Webpack
 
     Setup
 
-</body>
-</html>
+## React
