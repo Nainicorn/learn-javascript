@@ -193,8 +193,6 @@
         for...in statement
         for...of statement
 
----SREENAINA----
-
 ## Lesson 6 Functions
 
     Function declarations
@@ -218,7 +216,6 @@
     Predefined functions
     Getter
     Setter
-    Rest Params
 
 ## Lesson 7 Expressions and operators
 
@@ -252,13 +249,17 @@
 
 ## Lesson 8 Numbers and Dates
 
+    Learn methods
+
 ## Lesson 9 Text Formatting
 
-    String Methods
+    Learn String Methods
 
 ## Lesson 10 Regular Expressions
 
 ## Lesson 11 Indexed Collections
+
+    Learn Array methods
 
 ## Lesson 12 Working with Objects
 

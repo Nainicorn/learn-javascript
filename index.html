@@ -32,6 +32,7 @@
             overflow: hidden;
             background-color: #fff;
             box-shadow: 4px 4px 10px gray;
+            resize: vertical;
         }
 
         .person {
@@ -57,6 +58,7 @@
         .card:hover .tilt {
             animation: naina-anim1 5s forwards;
         }
+
         /* .card:hover .tilt {
             transform: rotate(70deg);
             background-color: rgb(126, 126, 212);
@@ -78,9 +80,17 @@
                 background-color: rgb(126, 126, 212);
             }
         }
-    </style>
 
-    <div class="card">
+        @media only screen and (max-width: 1000px) {
+            body {
+                background-color: lightgreen;
+            }
+        }
+        
+
+</style>
+
+    <div class="card" draggable="true">
         <div class="tilt"></div>
         <div class="person"></div>
     </div>
