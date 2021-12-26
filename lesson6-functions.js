@@ -1,8 +1,8 @@
 function line() {
     console.log('---------------')
 }
+line()
 
-// line()
 
 // console.log(cube(3))
 
@@ -29,12 +29,12 @@ function line() {
 // console.log(factorial(5))
 
 // function hello() {
-//     console.log(arguments.callee)
+//     console.log(arguments.length)
 // }
 
-// hello(1, 2)
+// hello(1, 2, 3, 4)
 
-line()
+// line()
 
 // function person() {
 //     var name = '';
@@ -73,6 +73,13 @@ line()
 
 // append('hello', 'murali', 'naina')
 
+//default params
+// function square(num = 2) {
+//     return num * num;
+// }
+
+// console.log(square())
+
 //arrow functions
 // let elements = [
 //     'Hydrogen',
@@ -101,16 +108,16 @@ line()
 // console.log(a3); // logs [8, 6, 7, 9]
 
 
-// function Person() {
-//     // The Person() constructor defines `this` as itself.
-//     this.age = 0;
+function Person() {
+    // The Person() constructor defines `this` as itself.
+    this.age = 0;
 
-//     setInterval(() => {
-//         this.age++;
-//         console.log(this.age)
-//     }, 1000);
-// }
+    setInterval(() => {
+        this.age++;
+        console.log(this.age)
+    }, 1000);
+}
 
-// var p = new Person();
+var p = new Person();
 
 // console.log(encodeURI('http://learn.sreenaina.com?name=test space&age=4^^'))/

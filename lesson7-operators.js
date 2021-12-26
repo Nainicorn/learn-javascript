@@ -11,15 +11,15 @@ line()
 // console.log(parseInt(1000, 2))
 
 //destructuring
-let things = ['book', 'pencil', 'eraser']
+// let things = ['book', 'pencil', 'eraser']
 
-let b = things[0]
-let p = things[1]
-let e = things[2]
-console.log(b, p, e)
+// let b = things[0]
+// let p = things[1]
+// let e = things[2]
+// console.log(b, p, e)
 
-let [, p1,] = things;
-console.log(p1)
+// let [, p1,] = things;
+// console.log(p1)
 
 // let cakes = {
 //     'book': 'narnia', 
@@ -55,6 +55,7 @@ console.log(recipe)
 delete recipe.cup
 
 console.log(recipe)
-let arr = [1, 2, 3, 4]
-console.log(recipe instanceof Array)
-console.log(arr instanceof Array)
+
+// let arr = [1, 2, 3, 4]
+// console.log(recipe instanceof Array)
+// console.log(arr instanceof Array)

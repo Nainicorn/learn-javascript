@@ -1,7 +1,7 @@
 
-// function line() {
-//     console.log('---------------')
-// }
+function line() {
+    console.log('---------------')
+}
 // let x = 1
 // while (x < 10) {
 //     console.log(x)
@@ -79,7 +79,7 @@
 //         console.log(0);
 //         throw 'bogus';
 //     } catch (e) {
-//         console.log(e);
+//         console.log('catch', e);
 //     } finally {
 //         console.log(3);
 //         return false;

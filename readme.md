@@ -66,10 +66,6 @@
     Some examples of legal names are Number_hits, temp99, $credit, and _name.
 
 ## Lesson 4 Grammer and Types
-
-    single line comment // one line comment
-    multi line comment /* multi line comment */
-
 ### 6 Data Types (Primitives) operator typeof
 
         1. undefined

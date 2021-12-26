@@ -1,5 +1,5 @@
 //hoisting
-var c
+// var c
 // console.log(c) // b is undefined 
 // console.log(b); // b is not defined
 
@@ -21,7 +21,8 @@ var c
 // let coffees = ['French Roast', 'Colombian', 'Kona'];
 
 //parseInt
-// console.log(parseInt('101', 2))
+// let myB = 0b110
+// console.log(parseInt(myB, 10))
 
 // let bb = 100
 // console.log('decimal', bb)
@@ -47,7 +48,7 @@ var c
 
 //literals
 // let hex = 0xA
-// console.log('dec', parseInt(hex))
+// console.log('dec', parseInt(hex, 10))
 // console.log('bin', parseInt(hex, 2))
 // console.log('octal', parseInt(hex, 8))
 
@@ -93,14 +94,14 @@ var c
 //     }
 // }
 
-// const newperson = person;
+// // const newperson = person;
 
-// newperson.name = 'Jasmin'
-// console.log(person.name)
-// console.log(newperson.name)
+// // newperson.name = 'Jasmin'
+// // console.log(person.name)
+// // console.log(newperson.name)
 
-// //interesting they are the same as they only point to address in memory
-// console.log(newperson.name === person.name)
+// // //interesting they are the same as they only point to address in memory
+// // console.log(newperson.name === person.name)
 
 // function showCredits(strList, strType) {
 //     if (!strList || !strType) {
@@ -115,8 +116,7 @@ var c
 // showCredits('minors', 'name')
 // showCredits('clubs', 'dept')
 
-// console.log(person.ageName())
-
+// console.log(person.toString())
 
 //regexp
 
@@ -132,7 +132,7 @@ var c
 // console.log(`Hello ${name1}, \u{2F804} how are you ${time}?`)
 
 // var poem =
-// `Roses are red,
+// `Roses are red ,
 // Violets are blue.
 // Sugar is sweet,
 // and so is foo.` 
