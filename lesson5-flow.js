@@ -128,13 +128,13 @@ function line() {
 
 //loops
 // line()
-// let arr = [3, 6, 8, 9, 2, 5]
+let arr = [3, 6, 8, 9, 2, 5]
 // for (let i = 0; i < arr.length; i++) {
 //     console.log(arr[i]);
 // }
 
 // line()
-// for (let item of arr) {
-//     console.log(item);
-// }
+for (let item of arr) {
+    console.log(item);
+}
 

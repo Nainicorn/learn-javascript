@@ -1,11 +1,13 @@
-//GET http://localhost:3000/employees
+# run this json-server command below first to get localhost:3000 running
+# json-server --watch test.json 
 
+GET http://localhost:3000/employees/2
 
 POST http://localhost:3000/courses HTTP/1.1
 content-type: application/json
 
 {
-    "id": 1
+    "id": 1,
     "name": "Gym",
     "difficulty": "0"
 }

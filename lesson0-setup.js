@@ -6,7 +6,6 @@
 // 4. Live Server 
 // 5. Prettier
 // 6. Rest Client
-// 7. Bracket Pair
 // 8. Auto Open Markdown Preview
 // 9. Optionally Themes SynthWave, Git Themes etc.
 // 10. JSON Server npm install -g json-server 

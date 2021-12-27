@@ -44,18 +44,38 @@ line()
 // console.log(istasty)
 
 //delete
-let recipe = {
-    cup: 2,
-    heat: 150,
-    eggs: 3
-}
+// let recipe = {
+//     cup: 2,
+//     heat: 150,
+//     eggs: 3
+// }
 
-console.log(recipe)
+// console.log(recipe)
 
-delete recipe.cup
+// delete recipe.cup
 
-console.log(recipe)
+// console.log(recipe)
 
 // let arr = [1, 2, 3, 4]
 // console.log(recipe instanceof Array)
 // console.log(arr instanceof Array)
+
+let cakes = {
+    'book': 'narnia', 
+    'pencil': 'toptip', 
+    'eraser': 'gonewiththewind'
+}
+
+// function printCakeProp(prop) {
+//     console.log(cakes[prop])
+// }
+
+// printCakeProp('eraser')
+
+// for (let prop in cakes) {
+//     console.log(prop, cakes[prop])
+// }
+
+console.log(Object.getOwnPropertyNames(cakes))
+
+console.log(Object.keys(cakes))

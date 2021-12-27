@@ -14,7 +14,6 @@
         Live Server
         Prettier
         Rest Client
-        Bracket Pair
         Auto Open Markdown Preview
         Quokka
     Install Nodemon
@@ -255,9 +254,12 @@
 
 ## Lesson 11 Indexed Collections
 
-    Learn Array methods
+    Learn Array methods (important)
 
 ## Lesson 12 Working with Objects
+
+    Learn Inheritance (important)
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Details_of_the_Object_Model
 
 ## Lesson 13 Object Model
 
