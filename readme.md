@@ -291,9 +291,11 @@
     Basic CSS
         Media Query
     Basic Animations
+    CSS Counter
 
 ## Built in Objects
 
+    Document
     Window
     Screen
     Location
@@ -304,8 +306,7 @@
     Navigator
     HTML5 APIs
         Storage
-        DragNDrop
-        CSS Counter
+        DragNDrop        
         Console
         Canvas
         Clipboard
