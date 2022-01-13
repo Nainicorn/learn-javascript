@@ -1,0 +1,39 @@
+body {
+    background-color: beige;
+    margin: 0;
+}
+
+
+header {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    background-color: bisque;
+    font-size: 20pt;
+    font-weight: bold;
+    color:rgb(45, 68, 5);
+}
+
+table {
+    margin: 10px;
+    border-collapse: collapse;
+    cursor: pointer;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+th {
+    background-color: darksalmon;
+}
+
+tbody tr:nth-child(odd) td {
+    background-color: darkseagreen;
+}
+
+tbody tr:hover {
+    background-color: darkslategrey;
+    color: white;
+}
