@@ -47,11 +47,17 @@ getData = () => {
         });
 };
 
+getDataA = async () => {
+    let response = await axios.get("http://localhost:3000/users1");
+    window.USERS = response.data;
+    renderUsers();
+};
+
 postData = (data) => {
     axios
         .post("http://localhost:3000/users", data)
         .then((response) => {
-            getData();
+            getData(); 
         })
         .catch((error) => {
             console.log(error);
@@ -60,6 +66,7 @@ postData = (data) => {
 
 const get1 = document.getElementById("get1");
 get1.addEventListener("click", getData);
+// get1.addEventListener("click", getDataA); //using async
 
 const post1 = document.getElementById("post1");
 post1.addEventListener("click", () => {
