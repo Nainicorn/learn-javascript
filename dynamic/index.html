@@ -5,27 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <script src="index.js" defer></script>
+    <!-- <script src="index_xhr.js" defer></script> -->
+    <!-- <script src="index_fetch.js" defer></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index_axios.js" defer></script>
     <title>Dynamic</title>
 </head>
 
 <body>
-    <header>Students</header>
-    <table id="students01">
+    <header>Users</header>
+    <table>
         <thead>
             <th>ID</th>
             <th>First</th>
             <th>Last</th>
-            <th>SSN</th>
-            <th>Gender</th>
+            <th>Email</th>
         </thead>
         <tbody>
         </tbody>
         <tfoot>
-            <td colspan="5">Awesome Students!!!</td>
+            <td colspan="5">Awesome!!!</td>
         </tfoot>
     </table>
 
+    <div class="buttons">
+        <button id="get1">GET</button>
+        <button id="post1">POST</button>
+    </div>
 
 </body>
 </html>

@@ -1,5 +1,5 @@
 {
-  "employees": [
+  "users": [
     {
       "id": 1,
       "first_name": "Sebastian",
@@ -17,6 +17,18 @@
       "first_name": "Ann",
       "last_name": "Smith",
       "email": "ann@codingthesmartway.com"
+    },
+    {
+      "first_name": "Sreenaina",
+      "last_name": "Koujala",
+      "email": "nkoujala@gmail.com",
+      "id": 4
+    },
+    {
+      "first_name": "Sreenaina",
+      "last_name": "Koujala",
+      "email": "nkoujala@gmail.com",
+      "id": 5
     }
   ],
   "courses": [
