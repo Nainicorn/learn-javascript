@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Resize Observer</title>
+    </head>
+
+    <body>
+        <header>Header</header>
+        <article>
+            <div class="card">
+                <div class="title">Lorem, ipsum dolor.</div>
+                <section>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam molestias saepe, corrupti eius fuga nobis nulla accusamus fugiat eaque maiores libero consectetur, vel sit sapiente dolor optio quaerat error voluptatibus quidem alias perferendis facilis ex minus. Id soluta iusto velit modi minima deleniti. Tempore eaque quas, voluptate magni dolorem ex?</section>
+            </div>
+            <div class="card">
+                <div class="title">Obcaecati, incidunt debitis!</div>
+                <section>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam molestias saepe, corrupti eius fuga nobis nulla accusamus fugiat eaque maiores libero consectetur, vel sit sapiente dolor optio quaerat error voluptatibus quidem alias perferendis facilis ex minus. Id soluta iusto velit modi minima deleniti. Tempore eaque quas, voluptate magni dolorem ex?</section>
+            </div>
+            <div class="card">
+                <div class="title">Libero, numquam reiciendis!</div>
+                <section>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam molestias saepe, corrupti eius fuga nobis nulla accusamus fugiat eaque maiores libero consectetur, vel sit sapiente dolor optio quaerat error voluptatibus quidem alias perferendis facilis ex minus. Id soluta iusto velit modi minima deleniti. Tempore eaque quas, voluptate magni dolorem ex?</section>
+            </div>
+            <div class="card">
+                <div class="title">Maiores, iusto repellendus.</div>
+                <section>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam molestias saepe, corrupti eius fuga nobis nulla accusamus fugiat eaque maiores libero consectetur, vel sit sapiente dolor optio quaerat error voluptatibus quidem alias perferendis facilis ex minus. Id soluta iusto velit modi minima deleniti. Tempore eaque quas, voluptate magni dolorem ex?</section>
+            </div>
+            <div class="card">
+                <div class="title">Dolor, repellendus officiis.</div>
+                <section>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam molestias saepe, corrupti eius fuga nobis nulla accusamus fugiat eaque maiores libero consectetur, vel sit sapiente dolor optio quaerat error voluptatibus quidem alias perferendis facilis ex minus. Id soluta iusto velit modi minima deleniti. Tempore eaque quas, voluptate magni dolorem ex?</section>
+            </div>
+            <div class="card">
+                <div class="title">Nam, hic aspernatur!</div>
+                <section>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam molestias saepe, corrupti eius fuga nobis nulla accusamus fugiat eaque maiores libero consectetur, vel sit sapiente dolor optio quaerat error voluptatibus quidem alias perferendis facilis ex minus. Id soluta iusto velit modi minima deleniti. Tempore eaque quas, voluptate magni dolorem ex?</section>
+            </div>
+            <div class="card">
+                <div class="title">Corporis, nihil neque?</div>
+                <section>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam molestias saepe, corrupti eius fuga nobis nulla accusamus fugiat eaque maiores libero consectetur, vel sit sapiente dolor optio quaerat error voluptatibus quidem alias perferendis facilis ex minus. Id soluta iusto velit modi minima deleniti. Tempore eaque quas, voluptate magni dolorem ex?</section>
+            </div>
+            <div class="card">
+                <div class="title">Totam, voluptas repudiandae.</div>
+                <section>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam molestias saepe, corrupti eius fuga nobis nulla accusamus fugiat eaque maiores libero consectetur, vel sit sapiente dolor optio quaerat error voluptatibus quidem alias perferendis facilis ex minus. Id soluta iusto velit modi minima deleniti. Tempore eaque quas, voluptate magni dolorem ex?</section>
+            </div>
+            <div class="card">
+                <div class="title">Assumenda, aliquid laboriosam.</div>
+                <section>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam molestias saepe, corrupti eius fuga nobis nulla accusamus fugiat eaque maiores libero consectetur, vel sit sapiente dolor optio quaerat error voluptatibus quidem alias perferendis facilis ex minus. Id soluta iusto velit modi minima deleniti. Tempore eaque quas, voluptate magni dolorem ex?</section>
+            </div>
+            <div class="card">
+                <div class="title">Corporis, cupiditate natus?</div>
+                <section>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam molestias saepe, corrupti eius fuga nobis nulla accusamus fugiat eaque maiores libero consectetur, vel sit sapiente dolor optio quaerat error voluptatibus quidem alias perferendis facilis ex minus. Id soluta iusto velit modi minima deleniti. Tempore eaque quas, voluptate magni dolorem ex?</section>
+            </div>
+        </article>
+        <footer>Footer</footer>
+    </body>
+    <style>
+        html,
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        header,
+        footer,
+        article {
+            padding: 10px;
+            overflow: auto;
+        }
+        header {
+            background-color: aquamarine;
+        }
+        footer {
+            background-color: blanchedalmond;
+        }
+        article {
+            flex: 1;
+        }
+        .card {
+            translate: -100%;
+            transition: all 0.2s ease-in-out;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+        .card .title {
+            transition: all 1s ease-in-out;
+            font-size: 15pt;
+            background-color: burlywood;
+            padding: 10px;
+            opacity: 0;
+        }
+
+        .card.highlight {
+            translate: 0;
+        }
+
+        .card.highlight .title {
+            opacity: 1;
+        }
+</style>
+    <script>
+        const cards = document.querySelectorAll(".card");
+       
+        const iO = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                entry.target.classList.toggle('highlight', entry.isIntersecting)
+            })
+        })
+           
+        cards.forEach(card => {
+            iO.observe(card);
+        })
+    </script>
+</html>

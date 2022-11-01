@@ -314,6 +314,7 @@
         Network
         Page Visibility
         Resize Observer (Container Queries)
+        Intersection Observer
         Socket API
 
 ## DOM

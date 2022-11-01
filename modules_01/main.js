@@ -7,7 +7,7 @@ let name = {
 }
 
 // let formattedName = formatter.lastCommaFirst(name);
-let formattedName = f1.firstLast(name);
+let formattedName = f1.lastCommaFirst(name);
 
 let nameDiv = document.querySelector('div.name');
 nameDiv.innerHTML = formattedName;
