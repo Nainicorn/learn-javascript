@@ -1,0 +1,24 @@
+.inputValues {
+  padding: 5px;
+  margin: 5px;
+  background-color: darkcyan;
+}
+
+.inputDataHeader {
+  background-color: lightskyblue;
+  padding: 5px;
+  margin: 5px;
+}
+.inputValue {
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#saveDataBtn{
+    background-color: lightpink;
+    border-radius: 5px;
+    padding: 5px;
+  margin: 5px;
+}
