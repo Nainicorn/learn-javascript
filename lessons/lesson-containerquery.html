@@ -12,7 +12,7 @@
         <section id="section1">
             <article class="left">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit amet <strong>consectetur</strong> adipisicing elit.
                     Incidunt alias voluptates ad animi accusantium doloremque at
                     modi, numquam repellat fugiat quos. Obcaecati delectus non
                     sit iusto quo totam fugit quia!
@@ -212,6 +212,10 @@
             article {
                 background-color: beige;
             }
+        }
+
+        p:has(strong) {
+            background-color: w3-khaki;
         }
     </style>
 
