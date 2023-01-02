@@ -1,0 +1,42 @@
+html,
+body {
+  margin: 0;
+  padding: 20px;
+}
+
+.boxes {
+  background-color: #efefef;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0 0 20px;
+  height: 80vh;
+  overflow: scroll;
+  gap: 20px;
+  border: 1px dashed #ccc;
+}
+
+.box {
+  border: 10px solid rgb(54, 138, 221);
+  background-color: cyan;
+  height: 100px;
+  width: 100px;
+  padding: 20px;
+  border-radius: 10%;
+  transition: background-color trandform 0.5s ease-in-out;
+  position: relative;
+}
+
+.box:hover:before {
+  content: "";
+  position: absolute;
+  background-color: red;
+  left: 0;
+  bottom: -22px;
+  height: 10px;
+  right: 0;
+}
+
+.box:hover {
+  background-color: pink;
+  transform: rotate(2deg);
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <link rel="stylesheet" href="move.css" />
+  </head>
+  <div class="box"></div>
+</html>
+
+<script>
+  let box = document.querySelector(".box");
+
+  window.addEventListener("keydown", (e) => {
+    // console.log(e.key);
+    switch (e.key) {
+      case "ArrowDown":
+        moveDown();
+        screenColor();
+        endOfScreen();
+        break;
+      case "ArrowLeft":
+        moveLeft();
+        screenColor();
+        endOfScreen();
+        break;
+      case "ArrowUp":
+        moveUp();
+        screenColor();
+        endOfScreen();
+        break;
+      case "ArrowRight":
+        moveRight();
+        screenColor();
+        endOfScreen();
+        break;
+    }
+  });
+
+  function moveDown() {
+    let top = box.offsetTop;
+    console.log(top);
+    box.style.top = top + 10 + "px";
+  }
+  function moveUp() {
+    let top = box.offsetTop;
+    box.style.top = top - 10 + "px";
+    console.log(top);
+  }
+  function moveRight() {
+    let left = box.offsetLeft;
+    box.style.left = left + 10 + "px";
+  }
+  function moveLeft() {
+    let left = box.offsetLeft;
+    box.style.left = left - 10 + "px";
+  }
+  function screenColor() {
+    if (box.offsetTop == 0 || box.offsetLeft == 0) {
+      box.style.backgroundColor = "red";
+    } else {
+      box.style.backgroundColor = "green";
+    }
+  }
+
+  function endOfScreen() {
+    if (box.offsetTop == 0 || box.offsetLeft == 0) {
+      !moveDown;
+    }
+    // if box height is equal to window inner height, then turn box red and prevent it from moving off screen
+    // if box width is equal to window inner width, then turn box red and prevent it from moving off screen
+  }
+</script>
