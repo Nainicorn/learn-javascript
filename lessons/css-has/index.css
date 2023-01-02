@@ -1,12 +1,54 @@
 html,
 body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
   background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  place-items: center;
 }
 
-.add-div {
+button {
+  margin: 10px;
+  width: fit-content;
+}
+
+.container {
+  width: 500px;
+  height: 400px;
+  border: 1px solid #fff;
+  overflow: auto;
+  background-color: darkblue;
+  resize: both;
+}
+
+.item {
   background-color: burlywood;
   display: flex;
   justify-content: space-between;
   margin: 10px;
-  padding: 10px;
+  padding: 0 10px;
+  align-items: center;
+}
+
+.container:has(.item:nth-child(2)) {
+  background-color: darkgreen;
+}
+
+.container:has(.item:nth-child(4)) {
+  background-color: darkmagenta;
+}
+
+.container:has(.item:nth-child(6)) {
+  background-color: darkred;
+}
+
+.container:has(.item:nth-child(8)) .item {
+  background-color: #fff;
+  width: 100px;
+  display: inline-block;
 }

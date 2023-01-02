@@ -1,15 +1,29 @@
-function addNewDiv() {
-    // let newDiv = document.createElement("div") 
-    // could have also just created a new div but I duplicated instead
-    // how to add new div if all are gone from screen
-    let defaultDiv = document.querySelector(".add-div")
-    let newDiv = defaultDiv.cloneNode(true)
-    let containerDiv = document.querySelector(".div-container")
-    containerDiv.appendChild(newDiv)
-}
-function deleteDiv() {
-    // remove specific divs + counter and id
-    let defaultDiv = document.querySelector(".add-div")
-    defaultDiv.remove()
-}
+let btnAdd = document.querySelector("#btnAdd");
+let counter = 0;
+let container = document.querySelector(".container");
 
+btnAdd.addEventListener("click", (e) => {
+    counter++;
+    addItem(counter);
+});
+
+let addItem = (counter) => {
+    //make some html
+    let strHtml = `
+        <div class="item">
+            <span>Item ${counter}</span>
+            <button class="btn-delete">X</button>
+        </div>
+    `;
+
+    let currentHtml = container.innerHTML;
+    container.innerHTML = currentHtml + strHtml;
+};
+
+container.addEventListener("click", (e) => {
+    let element = e.target;
+    if (element.classList.contains("btn-delete")) {
+        let item = element.closest('.item');
+        item.remove();
+    }
+});
