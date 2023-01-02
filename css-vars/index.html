@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Vars</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body data-theme="dark">
+    <header>
+        <label>Header</label>
+        <select>
+            <option value="dark">Dark</option>
+            <option value="light">Light</option>
+            <option value="meadow">Meadow</option>
+            <option value="sky">Sky</option>
+        </select>
+    </header>
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quaerat.</p>
+        <p>Quo, sint. Laudantium exercitationem repudiandae culpa! Incidunt facilis autem reiciendis!</p>
+        <p>Aperiam suscipit vitae consequatur vero reiciendis, quo illo esse in.</p>
+        <p>Nulla adipisci minus autem inventore quod doloribus quas dolorem nemo?</p>
+        <p>Dicta placeat dolor libero quis veritatis veniam fugit molestiae magni?</p>
+    </main>
+    <footer>Copyright footer.</footer>
+  
+</body>
+
+<script>
+    let themeSelect = document.querySelector('select');
+    themeSelect.addEventListener('change', e => {
+        let theme = e.target.value;
+        document.body.setAttribute('data-theme', theme);
+    })
+</script>
+</html>
