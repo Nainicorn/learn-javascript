@@ -1,0 +1,40 @@
+/* Keyframes hold what styles the element will have at certain times */
+/* the style will change by using the keywords "from" and "to" (which represents 0% (start) and 100% (complete)) */
+/* learn more about gradients */
+@keyframes block {
+  0% {
+    background-color: #f12e2c;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: #f27072;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: #e1aba0;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: #9c6e5d;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: #6f4149;
+    left: 0px;
+    top: 0px;
+  }
+}
+.block {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: #6f4149;
+  animation-name: block;
+  animation-duration: 4s;
+  /* animation-iteration-count: infinite; */
+  /* animation-direction: reverse; */
+}
