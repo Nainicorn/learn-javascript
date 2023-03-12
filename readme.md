@@ -1,4 +1,7 @@
-# **simple2master** - _master in simple steps_
+
+### Hello! Welcome to my personalized JS bootcamp where I tackle different challenges, feel free to run them on local server
+### lessons - holds all my challenges!
+##### working on implementing projects into personal website sreenaina.com
 
 ## Lesson 0 Environment Setup
 
