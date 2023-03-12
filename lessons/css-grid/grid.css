@@ -2,27 +2,44 @@ html,
 body {
   margin: 0;
   padding: 0;
-  display: grid;
-  box-sizing: border-box;
-  grid-template-areas: 
-    "header header header"
-    "content content sidebar"
-    "footer footer footer"
-  ;
-  grid-template-rows: 30px auto 30px;
+  background-color: cadetblue;
   height: 100vh;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    'ad header header'
+    'ad section content1'
+    'ad footer footer';
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 200px auto 200px;
+}
+
+aside {
+  grid-area: ad;
+  background-color: aliceblue;
 }
 
 .header {
   padding: 10px;
   grid-area: header;
 }
+
+.section {
+  background-color: bisque;
+  grid-area: section;
+
+}
+
 .content {
   background: skyblue;
   padding: 10px 0 0 10px;
   overflow: auto;
-  grid-area: content;
+  grid-area: content1;
+
 }
+
 .footer {
   padding: 10px;
   grid-area: footer;
@@ -34,26 +51,4 @@ body {
   text-align: center;
   height: 100px;
   width: 100px;
-  display: inline-block;
-}
-
-@media (max-width: 600px) {
-    body {
-        grid-template-rows: 30px auto 0;
-        grid-template-columns: auto auto 100px;
-    }
-    .content {
-        background-color: yellow;
-        grid-area: content content .;
-    }
-    .content .box {
-        width: 100%;
-      }
-    .header {
-        grid-area: footer;
-        display: none;
-    }
-    .footer {
-        grid-area: header;
-    }
 }
