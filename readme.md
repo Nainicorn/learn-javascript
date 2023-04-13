@@ -1,7 +1,7 @@
 
-### Hello! Welcome to my personalized JS bootcamp where I tackle different challenges, feel free to run them on local server
+### personalized JS bootcamp (in progress)
 ### lessons - holds all my challenges!
-##### working on implementing projects into personal website sreenaina.com
+##### working on implementing projects into personal portfolio sreenaina.com
 
 ## Lesson 0 Environment Setup
 
