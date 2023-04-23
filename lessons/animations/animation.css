@@ -35,6 +35,36 @@
   background-color: #6f4149;
   animation-name: block;
   animation-duration: 4s;
-  /* animation-iteration-count: infinite; */
+  animation-iteration-count: infinite;
   /* animation-direction: reverse; */
+}
+
+@keyframes change {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: orange;
+  }
+  50% {
+    background-color: yellow;
+  }
+  75% {
+    background-color: green;
+  }
+  80% {
+    background-color: blue;
+  }
+  100% {
+    background-color: red;
+  }
+}
+.bg {
+  animation: change;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+body {
+  background-color: red;
 }
