@@ -1,0 +1,23 @@
+{
+  "name": "javascript-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "json": "json-server --watch db.json --port 8000",
+    "sql": "node sql",
+    "mongo": "node mongo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nainicorn/db-templates.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "json-server": "^0.17.3",
+    "mssql": "^9.1.1",
+    "mongoose": "^7.0.4"
+  }
+}
