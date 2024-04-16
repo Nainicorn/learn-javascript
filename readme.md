@@ -1,6 +1,6 @@
 
-### personalized JS bootcamp (in progress)
-### lessons - holds all my challenges!
+### Personalized JS bootcamp
+### lessons - holds all my progress
 ##### working on implementing projects into personal portfolio sreenaina.com
 
 ## Lesson 0 Environment Setup
